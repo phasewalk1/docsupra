@@ -1,0 +1,153 @@
+\hypertarget{class_initializer}{}\doxysection{Initializer Class Reference}
+\label{class_initializer}\index{Initializer@{Initializer}}
+
+
+\+: In charge of executing the \textquotesingle{}new\textquotesingle{} command @dev\+: Creates a new project directory, with a manifest file, src/, and tests/, and makefile  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_initializer_a739a1e615b2acbcbbe3cecb00603a8f5}{Initializer}} (std\+::string \mbox{\hyperlink{class_initializer_abd26ea16624eb6c11ddf93a49d93b19f}{path}}, bool force)
+\begin{DoxyCompactList}\small\item\em Construct a new Init\+:\+: \mbox{\hyperlink{class_initializer}{Initializer}} object @dev Throws an error if the directory exists and is not empty. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_initializer_a48e37b1ac6c784fdbd133c18b74e65e2}{spinup}} (bool bench\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em \+: Creates a new project directory and its subdirectories \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_initializer_ae38250d7f22b0187ad66cdd9ba6689a3}{init\+\_\+test}} (std\+::string name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_initializer_abd4be9887edbfa2ff3f03b7f998b164d}{build\+\_\+dir}} (bool with\+\_\+benches)
+\begin{DoxyCompactList}\small\item\em \+: Creates necessary subdirectories @dev\+: This is ran after the top level directory is created, within the \mbox{\hyperlink{class_initializer_a48e37b1ac6c784fdbd133c18b74e65e2}{spinup()}} function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_initializer_aac2bf92d45f1735270a7a6313e7b8924}{hello\+\_\+world}} ()
+\begin{DoxyCompactList}\small\item\em \+: Creates a hello world file in src/main.\+cpp \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_initializer_a8dcd0b289de145d678e31fa22868d288}{test\+\_\+hello\+\_\+world}} ()
+\begin{DoxyCompactList}\small\item\em \+: Creates a test file in tests/try\+\_\+main.\+cpp \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_initializer_a9ac90d5ed730fb5fb9b1ebe8c3118bb3}{makefile}} ()
+\begin{DoxyCompactList}\small\item\em \+: Creates a Makefile in the project directory TODO\+: Make this more robust and customizable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_initializer_a5de6921f9dabb6d8031b9e2a62f25c9e}{make\+\_\+git}} ()
+\begin{DoxyCompactList}\small\item\em \+: Initializes a git repository in the project directory @dev\+: If git is not installed, this will fail silently \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_initializer_ab2ca85a57978f2a9515400bc27a42343}{manifest}} ()
+\begin{DoxyCompactList}\small\item\em \+: Creates a manifest file in the project directory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_initializer_abd26ea16624eb6c11ddf93a49d93b19f}{path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: In charge of executing the \textquotesingle{}new\textquotesingle{} command @dev\+: Creates a new project directory, with a manifest file, src/, and tests/, and makefile 
+
+@fields\+: \+: \mbox{\hyperlink{class_initializer_abd26ea16624eb6c11ddf93a49d93b19f}{path(std\+::string)}}\+: The path to the new project directory 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_initializer_a739a1e615b2acbcbbe3cecb00603a8f5}\label{class_initializer_a739a1e615b2acbcbbe3cecb00603a8f5}} 
+\index{Initializer@{Initializer}!Initializer@{Initializer}}
+\index{Initializer@{Initializer}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{Initializer()}{Initializer()}}
+{\footnotesize\ttfamily Initializer\+::\+Initializer (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{bool}]{force }\end{DoxyParamCaption})}
+
+
+
+Construct a new Init\+:\+: \mbox{\hyperlink{class_initializer}{Initializer}} object @dev Throws an error if the directory exists and is not empty. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_initializer_abd4be9887edbfa2ff3f03b7f998b164d}\label{class_initializer_abd4be9887edbfa2ff3f03b7f998b164d}} 
+\index{Initializer@{Initializer}!build\_dir@{build\_dir}}
+\index{build\_dir@{build\_dir}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{build\_dir()}{build\_dir()}}
+{\footnotesize\ttfamily void Initializer\+::build\+\_\+dir (\begin{DoxyParamCaption}\item[{bool}]{with\+\_\+benches }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+: Creates necessary subdirectories @dev\+: This is ran after the top level directory is created, within the \mbox{\hyperlink{class_initializer_a48e37b1ac6c784fdbd133c18b74e65e2}{spinup()}} function 
+
+\mbox{\Hypertarget{class_initializer_aac2bf92d45f1735270a7a6313e7b8924}\label{class_initializer_aac2bf92d45f1735270a7a6313e7b8924}} 
+\index{Initializer@{Initializer}!hello\_world@{hello\_world}}
+\index{hello\_world@{hello\_world}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{hello\_world()}{hello\_world()}}
+{\footnotesize\ttfamily void Initializer\+::hello\+\_\+world (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+: Creates a hello world file in src/main.\+cpp 
+
+\mbox{\Hypertarget{class_initializer_ae38250d7f22b0187ad66cdd9ba6689a3}\label{class_initializer_ae38250d7f22b0187ad66cdd9ba6689a3}} 
+\index{Initializer@{Initializer}!init\_test@{init\_test}}
+\index{init\_test@{init\_test}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{init\_test()}{init\_test()}}
+{\footnotesize\ttfamily void Initializer\+::init\+\_\+test (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_initializer_a5de6921f9dabb6d8031b9e2a62f25c9e}\label{class_initializer_a5de6921f9dabb6d8031b9e2a62f25c9e}} 
+\index{Initializer@{Initializer}!make\_git@{make\_git}}
+\index{make\_git@{make\_git}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{make\_git()}{make\_git()}}
+{\footnotesize\ttfamily void Initializer\+::make\+\_\+git (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+: Initializes a git repository in the project directory @dev\+: If git is not installed, this will fail silently 
+
+\mbox{\Hypertarget{class_initializer_a9ac90d5ed730fb5fb9b1ebe8c3118bb3}\label{class_initializer_a9ac90d5ed730fb5fb9b1ebe8c3118bb3}} 
+\index{Initializer@{Initializer}!makefile@{makefile}}
+\index{makefile@{makefile}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{makefile()}{makefile()}}
+{\footnotesize\ttfamily void Initializer\+::makefile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+: Creates a Makefile in the project directory TODO\+: Make this more robust and customizable 
+
+\mbox{\Hypertarget{class_initializer_ab2ca85a57978f2a9515400bc27a42343}\label{class_initializer_ab2ca85a57978f2a9515400bc27a42343}} 
+\index{Initializer@{Initializer}!manifest@{manifest}}
+\index{manifest@{manifest}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{manifest()}{manifest()}}
+{\footnotesize\ttfamily void Initializer\+::manifest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+: Creates a manifest file in the project directory 
+
+\mbox{\Hypertarget{class_initializer_a48e37b1ac6c784fdbd133c18b74e65e2}\label{class_initializer_a48e37b1ac6c784fdbd133c18b74e65e2}} 
+\index{Initializer@{Initializer}!spinup@{spinup}}
+\index{spinup@{spinup}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{spinup()}{spinup()}}
+{\footnotesize\ttfamily void Initializer\+::spinup (\begin{DoxyParamCaption}\item[{bool}]{bench\+\_\+mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\+: Creates a new project directory and its subdirectories 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bench\+\_\+mode(bool)} & Whether or not to create a bench/ directory \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_initializer_a8dcd0b289de145d678e31fa22868d288}\label{class_initializer_a8dcd0b289de145d678e31fa22868d288}} 
+\index{Initializer@{Initializer}!test\_hello\_world@{test\_hello\_world}}
+\index{test\_hello\_world@{test\_hello\_world}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{test\_hello\_world()}{test\_hello\_world()}}
+{\footnotesize\ttfamily void Initializer\+::test\+\_\+hello\+\_\+world (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+: Creates a test file in tests/try\+\_\+main.\+cpp 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_initializer_abd26ea16624eb6c11ddf93a49d93b19f}\label{class_initializer_abd26ea16624eb6c11ddf93a49d93b19f}} 
+\index{Initializer@{Initializer}!path@{path}}
+\index{path@{path}!Initializer@{Initializer}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily std\+::string Initializer\+::path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/cmd/\mbox{\hyperlink{init_8hpp}{init.\+hpp}}\item 
+src/\mbox{\hyperlink{init_8cpp}{init.\+cpp}}\end{DoxyCompactItemize}

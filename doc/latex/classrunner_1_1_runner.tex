@@ -1,0 +1,159 @@
+\hypertarget{classrunner_1_1_runner}{}\doxysection{runner\+::Runner Class Reference}
+\label{classrunner_1_1_runner}\index{runner::Runner@{runner::Runner}}
+
+
+\+: The main runner class for the \textquotesingle{}saleen\textquotesingle{} program @dev\+: Used to run the program in the specified mode  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrunner_1_1_runner_a14700eb79d21d33a40340b616a4b6943}{Runner}} (std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classrunner_1_1_runner_a2e1525906e870348c27607879a9f2f17}{args}})
+\item 
+void \mbox{\hyperlink{classrunner_1_1_runner_a203a23223798c254afc6b4e03bbcd3c6}{set\+\_\+parser}} (const \mbox{\hyperlink{classparsing_1_1_parser}{Parser}} parser)
+\item 
+void \mbox{\hyperlink{classrunner_1_1_runner_ad5f69157b6c944e5ca69027325cb16ff}{set\+\_\+manif\+\_\+parser}} (const \mbox{\hyperlink{classmanif_1_1_manif_parser}{Manif\+Parser}} parser)
+\item 
+virtual void \mbox{\hyperlink{classrunner_1_1_runner_a9c0131e8a5d58f7ec40edb796edaa1ef}{run}} (OPT mode)
+\begin{DoxyCompactList}\small\item\em Switch on this-\/\texorpdfstring{$>$}{>}mode and run the program in the specified mode @dev Throws an error if the mode is invalid or if the arguments are invalid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classrunner_1_1_runner_a76203d21aa000713f8c813c3d1738798}{instantiate}} (std\+::string path, bool force, bool with\+\_\+benches)
+\begin{DoxyCompactList}\small\item\em Executes the \textquotesingle{}new\textquotesingle{} command. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrunner_1_1_runner_a621e483aa3376f27b53d70fed6626a03}{check}} ()
+\begin{DoxyCompactList}\small\item\em Checks validity of the saleen.\+toml manifest file. \end{DoxyCompactList}\item 
+virtual std\+::tuple$<$ \mbox{\hyperlink{classtesting_1_1_test_builder}{Test\+Builder}}, std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classrunner_1_1_runner_a9fb5f710f42f1324beec5568e44e5cc4}{setup\+\_\+tester}} ()
+\item 
+virtual std\+::tuple$<$ \mbox{\hyperlink{classtesting_1_1_test_builder}{Test\+Builder}}, std\+::map$<$ std\+::string, bool $>$ $>$ \mbox{\hyperlink{classrunner_1_1_runner_a74220479899b730d9be7a914c6d84d56}{test}} ()
+\item 
+std\+::tuple$<$ std\+::string, bool, bool $>$ \mbox{\hyperlink{classrunner_1_1_runner_a69602a467a646f0c4f76e101bdea541c}{get\+\_\+new\+\_\+args}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparsing_1_1_parser}{Parser}} \mbox{\hyperlink{classrunner_1_1_runner_a70935388c2cd9cfbab6e92c4f5e18fe4}{cparser}}
+\item 
+std\+::optional$<$ \mbox{\hyperlink{classmanif_1_1_manif_parser}{Manif\+Parser}} $>$ \mbox{\hyperlink{classrunner_1_1_runner_a4ec5d29166bd05334bd53917317557c0}{mparser}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classrunner_1_1_runner_a2e1525906e870348c27607879a9f2f17}{args}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrunner_1_1_runner_afce46f1841eaa86a7a1c6a7fbe37c493}{argc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: The main runner class for the \textquotesingle{}saleen\textquotesingle{} program @dev\+: Used to run the program in the specified mode 
+
+@fields\+: \+: \mbox{\hyperlink{classrunner_1_1_runner_afce46f1841eaa86a7a1c6a7fbe37c493}{argc(int)}}\+: The number of arguments passed to the program argv(char$\ast$$\ast$)\+: The arguments passed to the program mode(\+OPT)\+: The mode to run the program in 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrunner_1_1_runner_a14700eb79d21d33a40340b616a4b6943}\label{classrunner_1_1_runner_a14700eb79d21d33a40340b616a4b6943}} 
+\index{runner::Runner@{runner::Runner}!Runner@{Runner}}
+\index{Runner@{Runner}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{Runner()}{Runner()}}
+{\footnotesize\ttfamily Runner\+::\+Runner (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrunner_1_1_runner_a621e483aa3376f27b53d70fed6626a03}\label{classrunner_1_1_runner_a621e483aa3376f27b53d70fed6626a03}} 
+\index{runner::Runner@{runner::Runner}!check@{check}}
+\index{check@{check}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily void Runner\+::check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Checks validity of the saleen.\+toml manifest file. 
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a69602a467a646f0c4f76e101bdea541c}\label{classrunner_1_1_runner_a69602a467a646f0c4f76e101bdea541c}} 
+\index{runner::Runner@{runner::Runner}!get\_new\_args@{get\_new\_args}}
+\index{get\_new\_args@{get\_new\_args}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{get\_new\_args()}{get\_new\_args()}}
+{\footnotesize\ttfamily std\+::tuple$<$ std\+::string, bool, bool $>$ Runner\+::get\+\_\+new\+\_\+args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a76203d21aa000713f8c813c3d1738798}\label{classrunner_1_1_runner_a76203d21aa000713f8c813c3d1738798}} 
+\index{runner::Runner@{runner::Runner}!instantiate@{instantiate}}
+\index{instantiate@{instantiate}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{instantiate()}{instantiate()}}
+{\footnotesize\ttfamily void Runner\+::instantiate (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{bool}]{force,  }\item[{bool}]{with\+\_\+benches }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Executes the \textquotesingle{}new\textquotesingle{} command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path(std\+::string)} & The path to the directory to create (relative to the current directory \\
+\hline
+{\em with\+\_\+benches(bool)} & Whether or not to create benchmark directory (default\+: false) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrunner_1_1_runner_a9c0131e8a5d58f7ec40edb796edaa1ef}\label{classrunner_1_1_runner_a9c0131e8a5d58f7ec40edb796edaa1ef}} 
+\index{runner::Runner@{runner::Runner}!run@{run}}
+\index{run@{run}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Runner\+::run (\begin{DoxyParamCaption}\item[{OPT}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Switch on this-\/\texorpdfstring{$>$}{>}mode and run the program in the specified mode @dev Throws an error if the mode is invalid or if the arguments are invalid. 
+
+\mbox{\Hypertarget{classrunner_1_1_runner_ad5f69157b6c944e5ca69027325cb16ff}\label{classrunner_1_1_runner_ad5f69157b6c944e5ca69027325cb16ff}} 
+\index{runner::Runner@{runner::Runner}!set\_manif\_parser@{set\_manif\_parser}}
+\index{set\_manif\_parser@{set\_manif\_parser}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{set\_manif\_parser()}{set\_manif\_parser()}}
+{\footnotesize\ttfamily void runner\+::\+Runner\+::set\+\_\+manif\+\_\+parser (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmanif_1_1_manif_parser}{Manif\+Parser}}}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a203a23223798c254afc6b4e03bbcd3c6}\label{classrunner_1_1_runner_a203a23223798c254afc6b4e03bbcd3c6}} 
+\index{runner::Runner@{runner::Runner}!set\_parser@{set\_parser}}
+\index{set\_parser@{set\_parser}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{set\_parser()}{set\_parser()}}
+{\footnotesize\ttfamily void runner\+::\+Runner\+::set\+\_\+parser (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classparsing_1_1_parser}{Parser}}}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a9fb5f710f42f1324beec5568e44e5cc4}\label{classrunner_1_1_runner_a9fb5f710f42f1324beec5568e44e5cc4}} 
+\index{runner::Runner@{runner::Runner}!setup\_tester@{setup\_tester}}
+\index{setup\_tester@{setup\_tester}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{setup\_tester()}{setup\_tester()}}
+{\footnotesize\ttfamily std\+::tuple$<$ \mbox{\hyperlink{classtesting_1_1_test_builder}{Test\+Builder}}, std\+::vector$<$ std\+::string $>$ $>$ Runner\+::setup\+\_\+tester (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a74220479899b730d9be7a914c6d84d56}\label{classrunner_1_1_runner_a74220479899b730d9be7a914c6d84d56}} 
+\index{runner::Runner@{runner::Runner}!test@{test}}
+\index{test@{test}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily std\+::tuple$<$ \mbox{\hyperlink{classtesting_1_1_test_builder}{Test\+Builder}}, std\+::map$<$ std\+::string, bool $>$ $>$ Runner\+::test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrunner_1_1_runner_afce46f1841eaa86a7a1c6a7fbe37c493}\label{classrunner_1_1_runner_afce46f1841eaa86a7a1c6a7fbe37c493}} 
+\index{runner::Runner@{runner::Runner}!argc@{argc}}
+\index{argc@{argc}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{argc}{argc}}
+{\footnotesize\ttfamily size\+\_\+t runner\+::\+Runner\+::argc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a2e1525906e870348c27607879a9f2f17}\label{classrunner_1_1_runner_a2e1525906e870348c27607879a9f2f17}} 
+\index{runner::Runner@{runner::Runner}!args@{args}}
+\index{args@{args}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ runner\+::\+Runner\+::args\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a70935388c2cd9cfbab6e92c4f5e18fe4}\label{classrunner_1_1_runner_a70935388c2cd9cfbab6e92c4f5e18fe4}} 
+\index{runner::Runner@{runner::Runner}!cparser@{cparser}}
+\index{cparser@{cparser}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{cparser}{cparser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classparsing_1_1_parser}{Parser}} runner\+::\+Runner\+::cparser\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrunner_1_1_runner_a4ec5d29166bd05334bd53917317557c0}\label{classrunner_1_1_runner_a4ec5d29166bd05334bd53917317557c0}} 
+\index{runner::Runner@{runner::Runner}!mparser@{mparser}}
+\index{mparser@{mparser}!runner::Runner@{runner::Runner}}
+\doxysubsubsection{\texorpdfstring{mparser}{mparser}}
+{\footnotesize\ttfamily std\+::optional$<$\mbox{\hyperlink{classmanif_1_1_manif_parser}{Manif\+Parser}}$>$ runner\+::\+Runner\+::mparser\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/util/\mbox{\hyperlink{runner_8hpp}{runner.\+hpp}}\item 
+src/\mbox{\hyperlink{runner_8cpp}{runner.\+cpp}}\end{DoxyCompactItemize}

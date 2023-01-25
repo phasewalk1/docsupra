@@ -1,0 +1,194 @@
+\hypertarget{classparsing_1_1_parser}{}\doxysection{parsing\+::Parser Class Reference}
+\label{classparsing_1_1_parser}\index{parsing::Parser@{parsing::Parser}}
+
+
+\+: The \mbox{\hyperlink{classparsing_1_1_parser}{Parser}} class @dev\+: Used to parse the runner options and manifest file  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparsing_1_1_parser_a12234f6cd36b61af4b50c94a179422c1}{Parser}} ()
+\item 
+\mbox{\hyperlink{classparsing_1_1_parser_ae56e1020ba5a40b15bfcd3704cb01bd4}{Parser}} (int \mbox{\hyperlink{classparsing_1_1_parser_abb65ddde46d0e5393a4b10e6ee0cd73f}{argc}}, char $\ast$$\ast$\mbox{\hyperlink{classparsing_1_1_parser_a801ed81b06a127f660d4c67cf49124e4}{argv}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classparsing_1_1_parser}{Parser}}\+:\+: \mbox{\hyperlink{classparsing_1_1_parser}{Parser}} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classparsing_1_1_parser_a60109a3b4c9b4e04661e8bdf2193da06}{collect\+\_\+argv}} (char $\ast$$\ast$\mbox{\hyperlink{classparsing_1_1_parser_a801ed81b06a127f660d4c67cf49124e4}{argv}})
+\begin{DoxyCompactList}\small\item\em Collects the argv array into a vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceparsing_a4d0dd6baa23699591050c6c2e829de95}{OPT}} \mbox{\hyperlink{classparsing_1_1_parser_a060d2528485a4a0cf47c1b3f083f9695}{mode}} ()
+\begin{DoxyCompactList}\small\item\em Parses the first argument, e.\+g. the option to run the program in. (\textquotesingle{}check\textquotesingle{}, \textquotesingle{}new\textquotesingle{}, etc.) @dev Throws an error if no arguments are given or if the argument is invalid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparsing_1_1_parser_a7609ede47294906453568fca69913a0d}{ok}} ()
+\begin{DoxyCompactList}\small\item\em Validates the number of arguments for the given option. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparsing_1_1_parser_a00f028667ffee9f1cfe7c4465f430566}{has\+\_\+one\+\_\+flag}} ()
+\begin{DoxyCompactList}\small\item\em Checks if any flags are present in the arguments. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparsing_1_1_parser_a9278fe0349422b3ba7cf0db8312a0edf}{has\+\_\+flag}} (const std\+::string flag)
+\begin{DoxyCompactList}\small\item\em Checks if a specific flag is present in the arguments. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparsing_1_1_parser_aceb4e0a4cfd7a8c1d4626d23fd64a728}{has\+\_\+flags}} (const std\+::vector$<$ std\+::string $>$ flags)
+\item 
+int \mbox{\hyperlink{classparsing_1_1_parser_a7e9e6cd5b19457d9a0ffca8f4783a27f}{get\+\_\+argc}} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classparsing_1_1_parser_abf114d9cf717ba6f05537f08e1b42f2e}{get\+\_\+argv}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classparsing_1_1_parser_abb65ddde46d0e5393a4b10e6ee0cd73f}{argc}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classparsing_1_1_parser_a801ed81b06a127f660d4c67cf49124e4}{argv}}
+\item 
+\mbox{\hyperlink{namespaceparsing_a4d0dd6baa23699591050c6c2e829de95}{OPT}} \mbox{\hyperlink{classparsing_1_1_parser_a73a545a863699b59e6fd008badc71bb5}{opt}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: The \mbox{\hyperlink{classparsing_1_1_parser}{Parser}} class @dev\+: Used to parse the runner options and manifest file 
+
+@fields\+: \+: \mbox{\hyperlink{classparsing_1_1_parser_abb65ddde46d0e5393a4b10e6ee0cd73f}{argc(int)}}\+: argument count\+: for the runner arg(char$\ast$$\ast$)\+: argument vector\+: for the runner 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classparsing_1_1_parser_a12234f6cd36b61af4b50c94a179422c1}\label{classparsing_1_1_parser_a12234f6cd36b61af4b50c94a179422c1}} 
+\index{parsing::Parser@{parsing::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Parser\+::\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparsing_1_1_parser_ae56e1020ba5a40b15bfcd3704cb01bd4}\label{classparsing_1_1_parser_ae56e1020ba5a40b15bfcd3704cb01bd4}} 
+\index{parsing::Parser@{parsing::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classparsing_1_1_parser}{Parser}}\+:\+: \mbox{\hyperlink{classparsing_1_1_parser}{Parser}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classparsing_1_1_parser_abb65ddde46d0e5393a4b10e6ee0cd73f}{argc(int)}}} & The number of arguments passed to the program \\
+\hline
+{\em \mbox{\hyperlink{classparsing_1_1_parser_a801ed81b06a127f660d4c67cf49124e4}{argv(char$\ast$$\ast$)}}} & The arguments passed to the program \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classparsing_1_1_parser_a60109a3b4c9b4e04661e8bdf2193da06}\label{classparsing_1_1_parser_a60109a3b4c9b4e04661e8bdf2193da06}} 
+\index{parsing::Parser@{parsing::Parser}!collect\_argv@{collect\_argv}}
+\index{collect\_argv@{collect\_argv}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{collect\_argv()}{collect\_argv()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::collect\+\_\+argv (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Collects the argv array into a vector. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparsing_1_1_parser_a7e9e6cd5b19457d9a0ffca8f4783a27f}\label{classparsing_1_1_parser_a7e9e6cd5b19457d9a0ffca8f4783a27f}} 
+\index{parsing::Parser@{parsing::Parser}!get\_argc@{get\_argc}}
+\index{get\_argc@{get\_argc}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{get\_argc()}{get\_argc()}}
+{\footnotesize\ttfamily int parsing\+::\+Parser\+::get\+\_\+argc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classparsing_1_1_parser_abf114d9cf717ba6f05537f08e1b42f2e}\label{classparsing_1_1_parser_abf114d9cf717ba6f05537f08e1b42f2e}} 
+\index{parsing::Parser@{parsing::Parser}!get\_argv@{get\_argv}}
+\index{get\_argv@{get\_argv}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{get\_argv()}{get\_argv()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ parsing\+::\+Parser\+::get\+\_\+argv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classparsing_1_1_parser_a9278fe0349422b3ba7cf0db8312a0edf}\label{classparsing_1_1_parser_a9278fe0349422b3ba7cf0db8312a0edf}} 
+\index{parsing::Parser@{parsing::Parser}!has\_flag@{has\_flag}}
+\index{has\_flag@{has\_flag}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{has\_flag()}{has\_flag()}}
+{\footnotesize\ttfamily bool Parser\+::has\+\_\+flag (\begin{DoxyParamCaption}\item[{const std\+::string}]{flag }\end{DoxyParamCaption})}
+
+
+
+Checks if a specific flag is present in the arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag(std\+::string)} & The flag to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(true) If argv contains the flag 
+
+(false) If argv does not contain the flag 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparsing_1_1_parser_aceb4e0a4cfd7a8c1d4626d23fd64a728}\label{classparsing_1_1_parser_aceb4e0a4cfd7a8c1d4626d23fd64a728}} 
+\index{parsing::Parser@{parsing::Parser}!has\_flags@{has\_flags}}
+\index{has\_flags@{has\_flags}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{has\_flags()}{has\_flags()}}
+{\footnotesize\ttfamily bool Parser\+::has\+\_\+flags (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparsing_1_1_parser_a00f028667ffee9f1cfe7c4465f430566}\label{classparsing_1_1_parser_a00f028667ffee9f1cfe7c4465f430566}} 
+\index{parsing::Parser@{parsing::Parser}!has\_one\_flag@{has\_one\_flag}}
+\index{has\_one\_flag@{has\_one\_flag}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{has\_one\_flag()}{has\_one\_flag()}}
+{\footnotesize\ttfamily bool Parser\+::has\+\_\+one\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if any flags are present in the arguments. 
+
+\begin{DoxyReturn}{Returns}
+(true) If argv contains any flags 
+
+(false) If argv contains no flags 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparsing_1_1_parser_a060d2528485a4a0cf47c1b3f083f9695}\label{classparsing_1_1_parser_a060d2528485a4a0cf47c1b3f083f9695}} 
+\index{parsing::Parser@{parsing::Parser}!mode@{mode}}
+\index{mode@{mode}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceparsing_a4d0dd6baa23699591050c6c2e829de95}{OPT}} Parser\+::mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Parses the first argument, e.\+g. the option to run the program in. (\textquotesingle{}check\textquotesingle{}, \textquotesingle{}new\textquotesingle{}, etc.) @dev Throws an error if no arguments are given or if the argument is invalid. 
+
+\begin{DoxyReturn}{Returns}
+OPT\+: the option to run the program in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparsing_1_1_parser_a7609ede47294906453568fca69913a0d}\label{classparsing_1_1_parser_a7609ede47294906453568fca69913a0d}} 
+\index{parsing::Parser@{parsing::Parser}!ok@{ok}}
+\index{ok@{ok}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{ok()}{ok()}}
+{\footnotesize\ttfamily bool Parser\+::ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Validates the number of arguments for the given option. 
+
+\begin{DoxyReturn}{Returns}
+(true) If argc is valid for the given option 
+
+(false) If argc is invalid for the given option 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classparsing_1_1_parser_abb65ddde46d0e5393a4b10e6ee0cd73f}\label{classparsing_1_1_parser_abb65ddde46d0e5393a4b10e6ee0cd73f}} 
+\index{parsing::Parser@{parsing::Parser}!argc@{argc}}
+\index{argc@{argc}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{argc}{argc}}
+{\footnotesize\ttfamily int parsing\+::\+Parser\+::argc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classparsing_1_1_parser_a801ed81b06a127f660d4c67cf49124e4}\label{classparsing_1_1_parser_a801ed81b06a127f660d4c67cf49124e4}} 
+\index{parsing::Parser@{parsing::Parser}!argv@{argv}}
+\index{argv@{argv}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ parsing\+::\+Parser\+::argv\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classparsing_1_1_parser_a73a545a863699b59e6fd008badc71bb5}\label{classparsing_1_1_parser_a73a545a863699b59e6fd008badc71bb5}} 
+\index{parsing::Parser@{parsing::Parser}!opt@{opt}}
+\index{opt@{opt}!parsing::Parser@{parsing::Parser}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceparsing_a4d0dd6baa23699591050c6c2e829de95}{OPT}} parsing\+::\+Parser\+::opt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/util/\mbox{\hyperlink{parser_8hpp}{parser.\+hpp}}\item 
+src/\mbox{\hyperlink{parser_8cpp}{parser.\+cpp}}\end{DoxyCompactItemize}
