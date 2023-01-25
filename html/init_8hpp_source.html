@@ -77,7 +77,7 @@ $(function() {
   <div class="headertitle"><div class="title">init.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __INIT_H__</span></div>
+<a href="init_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __INIT_H__</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __INIT_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* ************************************************************************** */</span></div>
@@ -99,24 +99,34 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// Alias for std::filesystem</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>fs = std::filesystem;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">class </span>Initializer {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_initializer.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="class_initializer.html">Initializer</a> {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  Initializer(std::string path, <span class="keywordtype">bool</span> force);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> spinup(<span class="keywordtype">bool</span> bench_mode);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> init_test(std::string name);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_class" href="class_initializer.html">Initializer</a>(std::string <a class="code hl_variable" href="class_initializer.html#abd26ea16624eb6c11ddf93a49d93b19f">path</a>, <span class="keywordtype">bool</span> force);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#a48e37b1ac6c784fdbd133c18b74e65e2">spinup</a>(<span class="keywordtype">bool</span> bench_mode);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#ae38250d7f22b0187ad66cdd9ba6689a3">init_test</a>(std::string name);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  std::string path;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_initializer.html#abd26ea16624eb6c11ddf93a49d93b19f">   39</a></span>  std::string <a class="code hl_variable" href="class_initializer.html#abd26ea16624eb6c11ddf93a49d93b19f">path</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> build_dir(<span class="keywordtype">bool</span> with_benches);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">void</span> hello_world();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> test_hello_world();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">void</span> makefile();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> make_git();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> manifest();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#abd4be9887edbfa2ff3f03b7f998b164d">build_dir</a>(<span class="keywordtype">bool</span> with_benches);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#aac2bf92d45f1735270a7a6313e7b8924">hello_world</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#a8dcd0b289de145d678e31fa22868d288">test_hello_world</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#a9ac90d5ed730fb5fb9b1ebe8c3118bb3">makefile</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#a5de6921f9dabb6d8031b9e2a62f25c9e">make_git</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_initializer.html#ab2ca85a57978f2a9515400bc27a42343">manifest</a>();</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif </span><span class="comment">// __INIT_H__</span></div>
+<div class="ttc" id="aclass_initializer_html"><div class="ttname"><a href="class_initializer.html">Initializer</a></div><div class="ttdoc">: In charge of executing the 'new' command @dev: Creates a new project directory, with a manifest fil...</div><div class="ttdef"><b>Definition:</b> init.hpp:32</div></div>
+<div class="ttc" id="aclass_initializer_html_a48e37b1ac6c784fdbd133c18b74e65e2"><div class="ttname"><a href="class_initializer.html#a48e37b1ac6c784fdbd133c18b74e65e2">Initializer::spinup</a></div><div class="ttdeci">virtual void spinup(bool bench_mode)</div><div class="ttdoc">: Creates a new project directory and its subdirectories</div><div class="ttdef"><b>Definition:</b> init.cpp:46</div></div>
+<div class="ttc" id="aclass_initializer_html_a5de6921f9dabb6d8031b9e2a62f25c9e"><div class="ttname"><a href="class_initializer.html#a5de6921f9dabb6d8031b9e2a62f25c9e">Initializer::make_git</a></div><div class="ttdeci">void make_git()</div><div class="ttdoc">: Initializes a git repository in the project directory @dev: If git is not installed,...</div><div class="ttdef"><b>Definition:</b> init.cpp:160</div></div>
+<div class="ttc" id="aclass_initializer_html_a8dcd0b289de145d678e31fa22868d288"><div class="ttname"><a href="class_initializer.html#a8dcd0b289de145d678e31fa22868d288">Initializer::test_hello_world</a></div><div class="ttdeci">void test_hello_world()</div><div class="ttdoc">: Creates a test file in tests/try_main.cpp</div><div class="ttdef"><b>Definition:</b> init.cpp:101</div></div>
+<div class="ttc" id="aclass_initializer_html_a9ac90d5ed730fb5fb9b1ebe8c3118bb3"><div class="ttname"><a href="class_initializer.html#a9ac90d5ed730fb5fb9b1ebe8c3118bb3">Initializer::makefile</a></div><div class="ttdeci">void makefile()</div><div class="ttdoc">: Creates a Makefile in the project directory TODO: Make this more robust and customizable</div><div class="ttdef"><b>Definition:</b> init.cpp:130</div></div>
+<div class="ttc" id="aclass_initializer_html_aac2bf92d45f1735270a7a6313e7b8924"><div class="ttname"><a href="class_initializer.html#aac2bf92d45f1735270a7a6313e7b8924">Initializer::hello_world</a></div><div class="ttdeci">void hello_world()</div><div class="ttdoc">: Creates a hello world file in src/main.cpp</div><div class="ttdef"><b>Definition:</b> init.cpp:89</div></div>
+<div class="ttc" id="aclass_initializer_html_ab2ca85a57978f2a9515400bc27a42343"><div class="ttname"><a href="class_initializer.html#ab2ca85a57978f2a9515400bc27a42343">Initializer::manifest</a></div><div class="ttdeci">void manifest()</div><div class="ttdoc">: Creates a manifest file in the project directory</div><div class="ttdef"><b>Definition:</b> init.cpp:177</div></div>
+<div class="ttc" id="aclass_initializer_html_abd26ea16624eb6c11ddf93a49d93b19f"><div class="ttname"><a href="class_initializer.html#abd26ea16624eb6c11ddf93a49d93b19f">Initializer::path</a></div><div class="ttdeci">std::string path</div><div class="ttdef"><b>Definition:</b> init.hpp:39</div></div>
+<div class="ttc" id="aclass_initializer_html_abd4be9887edbfa2ff3f03b7f998b164d"><div class="ttname"><a href="class_initializer.html#abd4be9887edbfa2ff3f03b7f998b164d">Initializer::build_dir</a></div><div class="ttdeci">void build_dir(bool with_benches)</div><div class="ttdoc">: Creates necessary subdirectories @dev: This is ran after the top level directory is created,...</div><div class="ttdef"><b>Definition:</b> init.cpp:75</div></div>
+<div class="ttc" id="aclass_initializer_html_ae38250d7f22b0187ad66cdd9ba6689a3"><div class="ttname"><a href="class_initializer.html#ae38250d7f22b0187ad66cdd9ba6689a3">Initializer::init_test</a></div><div class="ttdeci">virtual void init_test(std::string name)</div><div class="ttdef"><b>Definition:</b> init.cpp:188</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

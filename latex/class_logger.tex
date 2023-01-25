@@ -1,26 +1,83 @@
 \hypertarget{class_logger}{}\doxysection{Logger Class Reference}
 \label{class_logger}\index{Logger@{Logger}}
+
+
+{\ttfamily \#include $<$logger.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_logger_a901b2ff09f845e9d1e00957252d4d95e}\label{class_logger_a901b2ff09f845e9d1e00957252d4d95e}} 
-{\bfseries Logger} (Log\+Level lvl)
+\mbox{\hyperlink{class_logger_abc41bfb031d896170c7675fa96a6b30c}{Logger}} ()
 \item 
-\mbox{\Hypertarget{class_logger_a2d07f4492416728afb3737b29d8ebb3a}\label{class_logger_a2d07f4492416728afb3737b29d8ebb3a}} 
-virtual void {\bfseries error} (const std\+::string msg)
+\mbox{\hyperlink{class_logger_a901b2ff09f845e9d1e00957252d4d95e}{Logger}} (\mbox{\hyperlink{logger_8hpp_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} lvl)
 \item 
-\mbox{\Hypertarget{class_logger_af2722bf26614b500ac72ce5f33ddebe3}\label{class_logger_af2722bf26614b500ac72ce5f33ddebe3}} 
-virtual void {\bfseries warn} (const std\+::string msg)
+virtual void \mbox{\hyperlink{class_logger_a2d07f4492416728afb3737b29d8ebb3a}{error}} (const std\+::string msg)
 \item 
-\mbox{\Hypertarget{class_logger_af30dab0ee5293a776d25b8a21a565bdd}\label{class_logger_af30dab0ee5293a776d25b8a21a565bdd}} 
-virtual void {\bfseries debug} (const std\+::string msg)
+virtual void \mbox{\hyperlink{class_logger_af2722bf26614b500ac72ce5f33ddebe3}{warn}} (const std\+::string msg)
 \item 
-\mbox{\Hypertarget{class_logger_a9c7430147e828abb30eb1d15aec42a0c}\label{class_logger_a9c7430147e828abb30eb1d15aec42a0c}} 
-virtual void {\bfseries info} (const std\+::string msg)
+virtual void \mbox{\hyperlink{class_logger_af30dab0ee5293a776d25b8a21a565bdd}{debug}} (const std\+::string msg)
+\item 
+virtual void \mbox{\hyperlink{class_logger_a9c7430147e828abb30eb1d15aec42a0c}{info}} (const std\+::string msg)
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{logger_8hpp_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} \mbox{\hyperlink{class_logger_a3b1d9dd7bd391ac7bed560918f82a03b}{level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logger_abc41bfb031d896170c7675fa96a6b30c}\label{class_logger_abc41bfb031d896170c7675fa96a6b30c}} 
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Logger\+::\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_logger_a901b2ff09f845e9d1e00957252d4d95e}\label{class_logger_a901b2ff09f845e9d1e00957252d4d95e}} 
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{logger_8hpp_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{lvl }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logger_af30dab0ee5293a776d25b8a21a565bdd}\label{class_logger_af30dab0ee5293a776d25b8a21a565bdd}} 
+\index{Logger@{Logger}!debug@{debug}}
+\index{debug@{debug}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily void Logger\+::debug (\begin{DoxyParamCaption}\item[{const std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_logger_a2d07f4492416728afb3737b29d8ebb3a}\label{class_logger_a2d07f4492416728afb3737b29d8ebb3a}} 
+\index{Logger@{Logger}!error@{error}}
+\index{error@{error}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily void Logger\+::error (\begin{DoxyParamCaption}\item[{const std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_logger_a9c7430147e828abb30eb1d15aec42a0c}\label{class_logger_a9c7430147e828abb30eb1d15aec42a0c}} 
+\index{Logger@{Logger}!info@{info}}
+\index{info@{info}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily void Logger\+::info (\begin{DoxyParamCaption}\item[{const std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_logger_af2722bf26614b500ac72ce5f33ddebe3}\label{class_logger_af2722bf26614b500ac72ce5f33ddebe3}} 
+\index{Logger@{Logger}!warn@{warn}}
+\index{warn@{warn}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{warn()}{warn()}}
+{\footnotesize\ttfamily void Logger\+::warn (\begin{DoxyParamCaption}\item[{const std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_logger_a3b1d9dd7bd391ac7bed560918f82a03b}\label{class_logger_a3b1d9dd7bd391ac7bed560918f82a03b}} 
+\index{Logger@{Logger}!level@{level}}
+\index{level@{level}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{logger_8hpp_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} Logger\+::level\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/util/logger.\+hpp\item 
-src/logger.\+cpp\end{DoxyCompactItemize}
+include/util/\mbox{\hyperlink{logger_8hpp}{logger.\+hpp}}\item 
+src/\mbox{\hyperlink{logger_8cpp}{logger.\+cpp}}\end{DoxyCompactItemize}

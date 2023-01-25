@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['invoke_5ftest_0',['invoke_test',['../classtesting_1_1_test_builder.html#a7052cdd1a2a8334b0ad5e0927d3c9da8',1,'testing::TestBuilder']]]
+  ['error_0',['error',['../class_logger.html#a2d07f4492416728afb3737b29d8ebb3a',1,'Logger']]]
 ];
